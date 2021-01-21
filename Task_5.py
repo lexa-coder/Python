@@ -9,7 +9,7 @@
 def task_5():
     s = 0
     while True:
-        for num in map(str, input('Input numbers or "*" for quit: ').split()):
+        for num in map(str, input('Input numbers or * for quit: ').split()):
             try:
                 if num == '*':
                     print(f'Sum is {s}. Exit')
