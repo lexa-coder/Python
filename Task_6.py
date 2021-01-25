@@ -19,7 +19,7 @@ for i in count(3):
     else:
         print(i)
 
-print('Второе задание: ')
+print('\nВторое задание: ')
 # № 2
 c = 0
 for el in cycle('Alexey-'):
