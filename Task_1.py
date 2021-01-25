@@ -17,14 +17,3 @@ print("Ставка в час: ", pay_hour)
 print("Премия: ", bonus)
 
 print("Заработная плата сотрудника: ", salary)
-
-
-
-
-# import sys
-# if 'h' in sys.argv[1:] or 'help' in sys.argv[1:]:
-#     print('РћРїРёСЃР°РЅРёРµ РєР°Рє СЂР°Р±РѕС‚Р°С‚СЊ СЃ РЅР°С€РёРј СЃРєСЂРёРїС‚РѕРј.')
-# else:
-#     path_1, path2 = sys.argv[1:]
-#     print(f'РљРѕРїРёСЂСѓСЋ РёР· РїР°РїРєРё {path_1} РІ РїР°РїРєСѓ {path2}')
-# import argparse
