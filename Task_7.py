@@ -31,5 +31,10 @@ with open('file_task_7.txt', 'r', encoding='utf-8') as f:
 
     print(f'{my_dict}, {average_profit}')
 
-with open('file_task_7.json', 'w', encoding='utf-8') as f_json:
-    json.dump(my_dict, f_json, ensure_ascii=False)
+out_info = [my_dict, average_profit]
+
+with open('file_task_7.json', 'w') as f_json:
+    json.dump(out_info, f_json)
+
+# with open('file_task_7.json') as f_json:
+#     print(json.load(f_json))
