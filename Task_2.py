@@ -7,7 +7,7 @@
 # Create some string and words (no program)
 
 
-with open('file_task_2.txt', 'r', encoding='utf-8') as f:  # x
+with open('file_task_2.txt', encoding='utf-8') as f:  # x
     #   f.seek(0)
     for count, string in enumerate(f):
         if len(string.split()) == 1:
