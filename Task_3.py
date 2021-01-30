@@ -13,7 +13,7 @@
 #     i += 1
 #     print(f'{random.uniform(1, 100000):.2f}')
 salar = []
-with open('file_task_3.txt', 'r', encoding='utf-8') as f:
+with open('file_task_3.txt', encoding='utf-8') as f:
 
     for i in f:
         name, sal = i.split()
