@@ -21,7 +21,7 @@ import json
 my_dict = {}
 profit = 0
 i = 0
-with open('file_task_7.txt', 'r', encoding='utf-8') as f:
+with open('file_task_7.txt', encoding='utf-8') as f:
     for line in f:
         name, firm, earnings, loss = line.split()
         my_dict[name] = int(earnings) - int(loss)
