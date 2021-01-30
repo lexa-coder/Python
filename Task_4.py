@@ -21,7 +21,7 @@ rus_num = {'One': 'Один',  # можно было и в одну строчк
            }
 
 # print(rus_num['One'])
-with open('file_task_4.txt', 'r', encoding='utf-8') as f:
+with open('file_task_4.txt', encoding='utf-8') as f:
     my_list = []
     a = f.read().replace('\n\n', ',').split(',')
     for i in a:
