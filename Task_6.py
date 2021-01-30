@@ -18,7 +18,7 @@
 # Create 'file_task_6.txt' (no program)
 
 school_sub = {}
-with open('file_task_6.txt', 'r', encoding='utf-8') as f:
+with open('file_task_6.txt', encoding='utf-8') as f:
     a = f.readlines()
     for i in a:
         data = i.replace('(', ' ').split()
