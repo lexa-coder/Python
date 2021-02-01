@@ -14,7 +14,14 @@ import time
 
 
 class TrafficLight:
-    __color = ['Красный', 'Желтый', 'Зеленый']
+    __color = ['\033[31mКрасный', '\033[33mЖелтый', '\033[32mЗеленый']
+
+    def __init__(self, name):
+        self.name = name
+        self._run()
+
+    def _run(self):
+        print(self.name, ': Запуск')
 
     def running(self):
         a = int(input('Введите количество итераций: '))
@@ -24,18 +31,19 @@ class TrafficLight:
             for el in enumerate(TrafficLight.__color):
 
                 if el[0] == 0:
-                    print("\033[31m{}".format(el[1]))
-                    time.sleep(5)
+                    print(el[1])
+                    time.sleep(7)
                 elif el[0] == 1:
-                    print("\033[33m{}".format(el[1]))
-                    time.sleep(1)
+                    print(el[1])
+                    time.sleep(2)
                 elif el[0] == 2:
-                    print("\033[32m{}".format(el[1]))
-                    time.sleep(3)
-                    print('\r', end='')
+                    print(el[1])
+                    time.sleep(5)
 
                 i += 1
 
 
-TrafficLight = TrafficLight()
+TrafficLight = TrafficLight('Светофор')
+
 TrafficLight.running()
+
