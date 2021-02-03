@@ -30,7 +30,6 @@ class Position(Worker):
         return f'Salary(inc. bonus): {sum(self._income.values()) } $'
 
 
-# position = Position('Алексей', 'Папшев', 3, 60000, 100000)
 worker = Position('Alexey', 'Papshev', 'Software Developer', 100000, 25000)
 print(worker.get_full_name())
 print(worker.position)
